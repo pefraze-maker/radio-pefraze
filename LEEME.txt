@@ -1,0 +1,30 @@
+RADIO PEFRAZE - PWA INICIAL
+
+Incluye una primera versión de aplicación web instalable:
+- Diseño adaptable a Android y computadora.
+- Enlace a la página pública de Zeno y a Facebook.
+- Manifest y service worker para instalación como PWA.
+- Reproductor integrado preparado, pendiente de configurar con el enlace directo de audio.
+
+IMPORTANTE:
+La URL pública https://zeno.fm/radio/radio-pefraze-de-comayagua/ es la página de escucha, no necesariamente la URL directa del audio. Para activar el reproductor integrado, obtener en el panel de Zeno el enlace directo de streaming/Listen URL y pegarlo en config.js como valor de streamUrl.
+
+PUBLICACIÓN GRATUITA:
+1. Crear o iniciar sesión en una cuenta de GitHub.
+2. Crear un repositorio público, por ejemplo radio-pefraze.
+3. Subir todos los archivos y carpetas de este paquete (manteniendo la estructura).
+4. En Settings > Pages, seleccionar Deploy from a branch, elegir main y / (root), guardar.
+5. Esperar a que GitHub Pages publique la web HTTPS. La dirección será parecida a https://TU-USUARIO.github.io/radio-pefraze/.
+6. Abrir esa dirección en Chrome para Android y elegir “Instalar aplicación” o “Añadir a pantalla de inicio”.
+
+ANTES DE PUBLICAR:
+- Reemplazar los iconos provisionales por el logotipo oficial del usuario.
+- Probar streamUrl en config.js: https://stream.zeno.fm/0ik64ee4eoxuv. Se infirió desde el enlace M3U y debe verificarse en navegador y Android.
+- Probar audio en Android y escritorio.
+
+Esta PWA no es todavía una app publicada en Google Play. No se cobra por GitHub Pages dentro de sus límites para repositorios públicos, pero el servicio y sus condiciones pueden cambiar.
+
+
+ACTUALIZACIÓN DEL LOGOTIPO
+- Se incorporó el logotipo oficial proporcionado por el usuario.
+- El enlace https://content-api.zeno.fm/s/GuJCVK redirige a la página pública de la emisora; no se ha confirmado como audio directo. Se recibió https://stream.zeno.fm/0ik64ee4eoxuv.m3u. La PWA usa como intento de audio la URL sin la extensión .m3u (https://stream.zeno.fm/0ik64ee4eoxuv), que debe probarse después de publicar porque la respuesta M3U no es directamente reproducible por todos los navegadores.

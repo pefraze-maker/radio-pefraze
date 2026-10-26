@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111318">
+  <meta name="description" content="Escucha PeFraZe Radio desde Comayagua, Honduras. Fe, recuerdos y buena música.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <title>PeFraZe Radio</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar"><span class="live-dot"></span><span>RADIO POR INTERNET</span><button id="installBtn" class="install hidden">Instalar app</button></header>
+    <section class="hero">
+      <img class="logo" src="logo-pefraze.png" alt="Logotipo oficial de PeFraZe Radio">
+      <p class="eyebrow">COMAYAGUA · HONDURAS</p>
+      <h1>PeFraZe <span>Radio</span></h1>
+      <p class="tagline">Fe, recuerdos y buena música</p>
+      <div class="status" id="status">Preparada para escuchar</div>
+      <audio id="player" controls preload="none"></audio>
+      <p class="note" id="streamNote">Para activar el reproductor integrado, falta configurar el enlace directo de audio de Zeno Media.</p>
+      <a class="primary" href="https://zeno.fm/radio/radio-pefraze-de-comayagua/" target="_blank" rel="noopener">▶ Escuchar en Zeno Media</a>
+    </section>
+    <nav class="links" aria-label="Enlaces de la emisora">
+      <a href="https://www.facebook.com/pedro.zepeda.796" target="_blank" rel="noopener"><span class="link-icon">f</span><span><b>Facebook</b><small>Sigue la emisora</small></span><span class="arrow">↗</span></a>
+      <a href="https://zeno.fm/radio/radio-pefraze-de-comayagua/" target="_blank" rel="noopener"><span class="link-icon">♫</span><span><b>Perfil de la radio</b><small>En Zeno Media</small></span><span class="arrow">↗</span></a>
+    </nav>
+    <footer>© <span id="year"></span> PeFraZe Radio · Comayagua, Honduras</footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
